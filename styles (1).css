@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #38bdf8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: background 0.6s ease;
+}
+.container {
+  width: 100%;
+  max-width: 420px;
+}
+.weather-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  padding: 25px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+.weather-card h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+.search-box button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #1e3a8a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.search-box button:hover {
+  background: #dbeafe;
+}
+.error {
+  text-align: center;
+  color: #fecaca;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  min-height: 20px;
+}
+.weather-info {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top img {
+  width: 80px;
+}
+#date {
+  color: #dbeafe;
+  margin-top: 5px;
+}
+.temp-section {
+  text-align: center;
+  margin: 20px 0;
+}
+.temp-section h1 {
+  font-size: 4rem;
+  margin-bottom: 8px;
+}
+.temp-section p {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #dbeafe;
+}
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.detail-box {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 15px;
+  border-radius: 16px;
+  text-align: center;
+}
+.detail-box span {
+  font-size: 0.9rem;
+  color: #dbeafe;
+}
+.detail-box h3 {
+  margin-top: 8px;
+  font-size: 1.2rem;
+}
